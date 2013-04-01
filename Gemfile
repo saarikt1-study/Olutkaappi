@@ -30,9 +30,16 @@ group :test, :development do
 	gem 'rspec-rails'
 	gem 'capybara'
     gem 'sqlite3', :require => 'sqlite3'
-	# gem 'guard-rspec'
+	gem 'guard'
+    gem 'guard-spork'
+    gem 'spork'
 end
 
+group :test do
+  gem 'rb-inotify', :require => false
+  gem 'rb-fsevent', :require => false
+  gem 'rb-fchange', :require => false
+end
 
 
 # gem 'wdm', '~> 0.1'

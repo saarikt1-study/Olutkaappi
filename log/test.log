@@ -3557,3 +3557,205 @@ Started GET "/static_pages/home" for 127.0.0.1 at 2013-04-01 16:56:11 +0300
 Processing by StaticPagesController#home as HTML
 Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
   [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/static_pages/search" for 127.0.0.1 at 2013-04-01 17:41:36 +0300
+Processing by StaticPagesController#search as HTML
+  Rendered static_pages/search.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2013-04-01 17:41:36 +0300
+Processing by StaticPagesController#home as HTML
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/static_pages/beer" for 127.0.0.1 at 2013-04-01 17:41:36 +0300
+Processing by StaticPagesController#beer as HTML
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.1ms)[0m  SELECT "beers".* FROM "beers" 
+Completed 200 OK in 9ms (Views: 1.4ms | ActiveRecord: 1.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "beers" ("alc", "beer_type", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["alc", "4,7%"], ["beer_type", "Lager"], ["created_at", Mon, 01 Apr 2013 14:41:37 UTC +00:00], ["name", "Karjala"], ["updated_at", Mon, 01 Apr 2013 14:41:37 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started GET "/beers" for 127.0.0.1 at 2013-04-01 17:41:37 +0300
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.1ms)[0m  SELECT "beers".* FROM "beers" 
+  Rendered beers/_form.html.erb (5.7ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/beers/1/edit" for 127.0.0.1 at 2013-04-01 17:41:37 +0300
+Processing by BeersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBeer Load (0.2ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered beers/_form.html.erb (1.8ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started PUT "/beers/1" for 127.0.0.1 at 2013-04-01 17:41:37 +0300
+Processing by BeersController#update as HTML
+  Parameters: {"utf8"=>"✓", "beer"=>{"name"=>"uusi bisse", "beer_type"=>"Lager", "alc"=>"4,7%"}, "commit"=>"Päivitä olut", "id"=>"1"}
+  [1m[35mBeer Load (0.1ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  UPDATE "beers" SET "name" = 'uusi bisse', "updated_at" = '2013-04-01 14:41:37.086241' WHERE "beers"."id" = 1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/beers
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/beers" for 127.0.0.1 at 2013-04-01 17:41:37 +0300
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.1ms)[0m  SELECT "beers".* FROM "beers" 
+  Rendered beers/_form.html.erb (1.6ms)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "beers" ("alc", "beer_type", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["alc", "4,7%"], ["beer_type", "Lager"], ["created_at", Mon, 01 Apr 2013 14:41:37 UTC +00:00], ["name", "Karjala"], ["updated_at", Mon, 01 Apr 2013 14:41:37 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+
+Started GET "/beers" for 127.0.0.1 at 2013-04-01 17:41:37 +0300
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.1ms)[0m  SELECT "beers".* FROM "beers" 
+  Rendered beers/_form.html.erb (1.6ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/beers/1/edit" for 127.0.0.1 at 2013-04-01 17:41:37 +0300
+Processing by BeersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBeer Load (0.1ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered beers/_form.html.erb (1.6ms)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+
+
+Started PUT "/beers/1" for 127.0.0.1 at 2013-04-01 17:41:37 +0300
+Processing by BeersController#update as HTML
+  Parameters: {"utf8"=>"✓", "beer"=>{"name"=>"", "beer_type"=>"Lager", "alc"=>"4,7%"}, "commit"=>"Päivitä olut", "id"=>"1"}
+  [1m[35mBeer Load (0.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Redirected to http://www.example.com/beers/1/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/beers/1/edit" for 127.0.0.1 at 2013-04-01 17:41:37 +0300
+Processing by BeersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBeer Load (0.1ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered beers/_form.html.erb (2.2ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "beers" ("alc", "beer_type", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["alc", "4,7%"], ["beer_type", "Lager"], ["created_at", Mon, 01 Apr 2013 14:41:37 UTC +00:00], ["name", "Karjala"], ["updated_at", Mon, 01 Apr 2013 14:41:37 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/beers" for 127.0.0.1 at 2013-04-01 17:41:37 +0300
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.1ms)[0m  [1mSELECT "beers".* FROM "beers" [0m
+  Rendered beers/_form.html.erb (1.6ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "beers" ("alc", "beer_type", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["alc", "4,7%"], ["beer_type", "Lager"], ["created_at", Mon, 01 Apr 2013 14:41:37 UTC +00:00], ["name", "Karjala"], ["updated_at", Mon, 01 Apr 2013 14:41:37 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/beers" for 127.0.0.1 at 2013-04-01 17:41:37 +0300
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.1ms)[0m  [1mSELECT "beers".* FROM "beers" [0m
+  Rendered beers/_form.html.erb (1.6ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/beers" for 127.0.0.1 at 2013-04-01 17:41:37 +0300
+Processing by BeersController#create as HTML
+  Parameters: {"utf8"=>"✓", "beer"=>{"name"=>"Olvi", "beer_type"=>"Lager", "alc"=>"4,7%"}, "commit"=>"Lisää olut"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "beers" ("alc", "beer_type", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["alc", "4,7%"], ["beer_type", "Lager"], ["created_at", Mon, 01 Apr 2013 14:41:37 UTC +00:00], ["name", "Olvi"], ["updated_at", Mon, 01 Apr 2013 14:41:37 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/beers
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/beers" for 127.0.0.1 at 2013-04-01 17:41:37 +0300
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.1ms)[0m  [1mSELECT "beers".* FROM "beers" [0m
+  Rendered beers/_form.html.erb (1.6ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "beers" ("alc", "beer_type", "created_at", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["alc", "4,7%"], ["beer_type", "Lager"], ["created_at", Mon, 01 Apr 2013 14:41:37 UTC +00:00], ["name", "Karjala"], ["updated_at", Mon, 01 Apr 2013 14:41:37 UTC +00:00]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+
+Started GET "/beers" for 127.0.0.1 at 2013-04-01 17:41:37 +0300
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.1ms)[0m  [1mSELECT "beers".* FROM "beers" [0m
+  Rendered beers/_form.html.erb (1.6ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/beers/1" for 127.0.0.1 at 2013-04-01 17:41:37 +0300
+Processing by BeersController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBeer Load (0.1ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "beers" WHERE "beers"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/beers
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/beers" for 127.0.0.1 at 2013-04-01 17:41:37 +0300
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.1ms)[0m  SELECT "beers".* FROM "beers" 
+  Rendered beers/_form.html.erb (1.6ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/static_pages/beer" for 127.0.0.1 at 2013-04-01 17:47:30 +0300
+Processing by StaticPagesController#beer as HTML
+  Rendered static_pages/beer.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/static_pages/search" for 127.0.0.1 at 2013-04-01 17:47:30 +0300
+Processing by StaticPagesController#search as HTML
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2013-04-01 17:47:30 +0300
+Processing by StaticPagesController#home as HTML
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.0ms)[0m  rollback transaction
