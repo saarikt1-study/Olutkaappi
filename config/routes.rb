@@ -1,4 +1,8 @@
 Beers::Application.routes.draw do
+  get "static_pages/home"
+
+  get "static_pages/search"
+
   root :to => 'Beers#index'
   get "beers/index"
 
