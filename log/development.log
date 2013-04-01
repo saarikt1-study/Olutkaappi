@@ -3482,3 +3482,38 @@ Served asset /beers.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-07 16:28:57 +0200
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-01 12:24:53 +0300
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.1ms)[0m  [1mSELECT "beers".* FROM "beers" [0m
+  Rendered beers/_form.html.erb (6.1ms)
+  Rendered beers/index.html.erb within layouts/application (12.2ms)
+Compiled jquery.js  (1ms)  (pid 89314)
+Compiled jquery_ujs.js  (0ms)  (pid 89314)
+Compiled application.js  (38ms)  (pid 89314)
+Completed 200 OK in 120ms (Views: 99.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 12:24:54 +0300
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2013-04-01 12:24:54 +0300
+Served asset /beers.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 12:24:54 +0300
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 12:24:54 +0300
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 12:24:54 +0300
+Served asset /application.js - 200 OK (6ms)
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2013-04-01 12:24:54 +0300
+Served asset /beers.js - 200 OK (2ms)
