@@ -1,0 +1,13 @@
+<%= form_for @beer do |f| %>
+	<%= f.label :Nimi %>
+	<%= f.text_field :name, id:'name' %>
+	<%= f.label :Tyyppi %>
+	<%= f.text_field :beer_type, id:'beer_type' %>
+	<%= f.label :Alc %>
+	<%= f.text_field :alc, id:'alc'%>
+	<% if @beer.name == nil %>
+		<%= submit_tag "Lisää olut", id:"Lisaa olut" %>
+	<%else%>
+		<%= submit_tag "Päivitä olut", id:"Paivita olut" %>
+	<% end %>
+<% end %>
