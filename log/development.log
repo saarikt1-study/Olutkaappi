@@ -3843,3 +3843,155 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2013-04-01 16:33:01 +0300
 Served asset /beers.js - 304 Not Modified (0ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2013-04-01 16:56:27 +0300
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 16:56:28 +0300
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-04-01 16:56:28 +0300
+Served asset /static_pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2013-04-01 16:56:28 +0300
+Served asset /beers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 16:56:28 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 16:56:28 +0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2013-04-01 16:56:28 +0300
+Served asset /beers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-04-01 16:56:28 +0300
+Served asset /static_pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 16:56:28 +0300
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started GET "/static_pages/beer" for 127.0.0.1 at 2013-04-01 16:56:32 +0300
+Processing by StaticPagesController#beer as HTML
+  Rendered static_pages/beer.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-04-01 16:56:32 +0300
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2013-04-01 16:56:32 +0300
+Served asset /beers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 16:56:32 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2013-04-01 16:56:32 +0300
+Served asset /beers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 16:56:32 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 16:56:32 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 16:56:32 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-04-01 16:56:32 +0300
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/static_pages/search" for 127.0.0.1 at 2013-04-01 16:56:36 +0300
+Processing by StaticPagesController#search as HTML
+  Rendered static_pages/search.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2013-04-01 16:56:36 +0300
+Served asset /beers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 16:56:36 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 16:56:36 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 16:56:36 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-04-01 16:56:36 +0300
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2013-04-01 16:56:36 +0300
+Served asset /beers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-04-01 16:56:36 +0300
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 16:56:36 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/static_pages/search" for 127.0.0.1 at 2013-04-01 17:09:53 +0300
+Processing by StaticPagesController#search as HTML
+  Rendered static_pages/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-01 17:09:53 +0300
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-01 17:09:53 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-01 17:09:53 +0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2013-04-01 17:09:53 +0300
+Served asset /beers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2013-04-01 17:09:53 +0300
+Served asset /beers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-04-01 17:09:53 +0300
+Served asset /static_pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-04-01 17:09:53 +0300
+Served asset /static_pages.js - 304 Not Modified (25ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-01 17:09:53 +0300
+Served asset /application.js - 304 Not Modified (6ms)
