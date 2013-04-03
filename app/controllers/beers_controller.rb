@@ -25,8 +25,10 @@ class BeersController < ApplicationController
   end
 
   def destroy
-  	Beer.destroy params[:id]
+  	#Beer.destroy params[:id]
+    @beer.destroy
   	redirect_to beers_path,
   	:notice => 'Olut poistettu'
   end
+
 end
