@@ -3,9 +3,9 @@ Beers::Application.routes.draw do
   root :to => 'Beers#index'
   get "beers/index"
 
-  get "static_pages/home"
-  get "static_pages/search"
-  get "static_pages/beer"
+  match '/home', to: 'static_pages#home'
+  match '/search', to: 'static_pages#search'
+  match '/beer', to: 'static_pages#beer'
 
   resources :beers
   # The priority is based upon order of creation:
