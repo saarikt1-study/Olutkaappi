@@ -5121,3 +5121,282 @@ Served asset /static_pages.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 11:06:06 +0300
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 12:40:20 +0300
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" [0m
+  Rendered beers/_form.html.erb (15.6ms)
+  Rendered beers/index.html.erb within layouts/application (93.6ms)
+Completed 200 OK in 530ms (Views: 296.4ms | ActiveRecord: 31.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 12:40:22 +0300
+Served asset /application.css - 304 Not Modified (46ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-03 12:40:22 +0300
+Served asset /custom.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2013-04-03 12:40:23 +0300
+Served asset /beers.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 12:40:23 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-04-03 12:40:23 +0300
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 12:40:23 +0300
+Served asset /jquery.js - 304 Not Modified (15ms)
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2013-04-03 12:40:23 +0300
+Served asset /beers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-04-03 12:40:23 +0300
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 12:40:23 +0300
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started GET "/static_pages/olut" for 127.0.0.1 at 2013-04-03 12:40:36 +0300
+
+ActionController::RoutingError (No route matches [GET] "/static_pages/olut"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/static_pages" for 127.0.0.1 at 2013-04-03 12:40:40 +0300
+
+ActionController::RoutingError (No route matches [GET] "/static_pages"):
+  actionpack (3.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.1) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.1) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.1) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.1) lib/action_dispatch/middleware/static.rb:53:in `call'
+  railties (3.2.1) lib/rails/engine.rb:479:in `call'
+  railties (3.2.1) lib/rails/application.rb:220:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.1) lib/rails/rack/log_tailer.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/static_pages/beer" for 127.0.0.1 at 2013-04-03 12:41:18 +0300
+Processing by StaticPagesController#beer as HTML
+  Rendered static_pages/beer.html.erb within layouts/application (93.6ms)
+Completed 500 Internal Server Error in 109ms
+
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    1: <h1>Olut</h1>
+    2: <p>
+    3:   <% beer = @beers[0] %>
+    4:   <section id="kuva">
+    5:   	<img src="<%=beer.image%>" alt="<%=beer.image%>"/> 
+    6:   </section>
+  app/views/static_pages/beer.html.erb:3:in `_app_views_static_pages_beer_html_erb__575986002_47588640'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/static_pages/beer" for 127.0.0.1 at 2013-04-03 12:41:57 +0300
+Processing by StaticPagesController#beer as HTML
+  Rendered static_pages/beer.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `find' for nil:NilClass):
+    1: <h1>Olut</h1>
+    2: <p>
+    3:   <% beer = @beers.find(0) %>
+    4:   <section id="kuva">
+    5:   	<img src="<%=beer.image%>" alt="<%=beer.image%>"/> 
+    6:   </section>
+  app/views/static_pages/beer.html.erb:3:in `_app_views_static_pages_beer_html_erb__575986002_51529440'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/static_pages/beer" for 127.0.0.1 at 2013-04-03 12:42:21 +0300
+Processing by StaticPagesController#beer as HTML
+  [1m[35mBeer Load (78.0ms)[0m  SELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1  [["id", 0]]
+  Rendered static_pages/beer.html.erb within layouts/application (78.0ms)
+Completed 500 Internal Server Error in 94ms
+
+ActiveRecord::RecordNotFound (Couldn't find Beer with id=0):
+  app/views/static_pages/beer.html.erb:3:in `_app_views_static_pages_beer_html_erb__575986002_52093104'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (0.0ms)
+
+
+Started GET "/static_pages/beer" for 127.0.0.1 at 2013-04-03 12:42:32 +0300
+Processing by StaticPagesController#beer as HTML
+  [1m[36mBeer Load (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered static_pages/beer.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActiveRecord::RecordNotFound (Couldn't find Beer with id=1):
+  app/views/static_pages/beer.html.erb:3:in `_app_views_static_pages_beer_html_erb__575986002_48261780'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 12:42:40 +0300
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.0ms)[0m  SELECT "beers".* FROM "beers" 
+  Rendered beers/_form.html.erb (0.0ms)
+  Rendered beers/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-03 12:42:40 +0300
+Served asset /custom.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 12:42:40 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-04-03 12:42:40 +0300
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 12:42:40 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2013-04-03 12:42:40 +0300
+Served asset /beers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-04-03 12:42:40 +0300
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2013-04-03 12:42:40 +0300
+Served asset /beers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 12:42:40 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 12:42:40 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started POST "/beers" for 127.0.0.1 at 2013-04-03 12:42:54 +0300
+Processing by BeersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"toU8aYrqQgv8zPQtJgdQ8eLvMr4c37c/qbPoVepGdE4=", "beer"=>{"name"=>"Karjala", "beer_type"=>"Lager", "alc"=>"4,7%", "country"=>"Suomi", "brewery"=>"Hartwall"}, "commit"=>"Lisää olut"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (62.4ms)[0m  INSERT INTO "beers" ("alc", "beer_type", "brewery", "country", "created_at", "image", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["alc", "4,7%"], ["beer_type", "Lager"], ["brewery", "Hartwall"], ["country", "Suomi"], ["created_at", Wed, 03 Apr 2013 09:42:54 UTC +00:00], ["image", nil], ["name", "Karjala"], ["updated_at", Wed, 03 Apr 2013 09:42:54 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 78ms (ActiveRecord: 62.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-03 12:42:55 +0300
+Processing by BeersController#index as HTML
+  [1m[35mBeer Load (0.0ms)[0m  SELECT "beers".* FROM "beers" 
+  Rendered beers/_form.html.erb (0.0ms)
+  Rendered beers/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-03 12:42:55 +0300
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2013-04-03 12:42:55 +0300
+Served asset /beers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-03 12:42:55 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-04-03 12:42:55 +0300
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-03 12:42:55 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-03 12:42:55 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2013-04-03 12:42:55 +0300
+Served asset /beers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-04-03 12:42:55 +0300
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-03 12:42:55 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/static_pages/beer" for 127.0.0.1 at 2013-04-03 12:43:03 +0300
+Processing by StaticPagesController#beer as HTML
+  [1m[36mBeer Load (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" WHERE "beers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered static_pages/beer.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 0ms
+
+ActiveRecord::RecordNotFound (Couldn't find Beer with id=1):
+  app/views/static_pages/beer.html.erb:3:in `_app_views_static_pages_beer_html_erb__575986002_48261780'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (0.0ms)
