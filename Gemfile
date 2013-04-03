@@ -27,7 +27,7 @@ end
 gem 'jquery-rails'
 
 group :test, :development do
-	gem 'turn'
+	#gem 'turn'
 	gem 'rspec-rails'
 	gem 'capybara'
     gem 'sqlite3', :require => 'sqlite3'
@@ -36,11 +36,11 @@ group :test, :development do
     gem 'spork'
 end
 
-group :test do
-  gem 'rb-inotify', :require => false
-  gem 'rb-fsevent', :require => false
-  gem 'rb-fchange', :require => false
-end
+# group :test do
+#   gem 'rb-inotify', :require => false
+#   gem 'rb-fsevent', :require => false
+#   gem 'rb-fchange', :require => false
+# end
 
 
 # gem 'wdm', '~> 0.1'

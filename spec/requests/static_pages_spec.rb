@@ -5,7 +5,7 @@ describe "Static pages" do
   describe "Home page" do
 
     it "should have the content 'Olutkaappi'" do
-      visit '/static_pages/home'
+      visit home_path
       page.should have_content('Olutkaappi')
     end
   end
@@ -13,7 +13,7 @@ describe "Static pages" do
   describe "Search page" do
 
     it "should have the content 'Haku'" do
-      visit '/static_pages/search'
+      visit search_path
       page.should have_content('Haku')
     end
   end
@@ -21,7 +21,7 @@ describe "Static pages" do
   describe "Beer" do
 
     it "should have the content 'Olut'" do
-      visit '/static_pages/beer'
+      visit beer_path
       page.should have_content('Olut')
     end
   end
