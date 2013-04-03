@@ -1,10 +1,11 @@
 Beers::Application.routes.draw do
+ 
+  root :to => 'Beers#index'
+  get "beers/index"
+
   get "static_pages/home"
   get "static_pages/search"
   get "static_pages/beer"
-
-  root :to => 'Beers#index'
-  get "beers/index"
 
   resources :beers
   # The priority is based upon order of creation:
