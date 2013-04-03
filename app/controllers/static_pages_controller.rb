@@ -6,5 +6,6 @@ class StaticPagesController < ApplicationController
   end
 
   def beer
+  	@beer = Beer.all[params[:id].to_i]
   end
 end
