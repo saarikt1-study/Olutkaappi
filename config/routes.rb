@@ -5,7 +5,7 @@ Beers::Application.routes.draw do
 
   match '/home', to: 'static_pages#home'
   match '/search', to: 'static_pages#search'
-  match '/beer', to: 'static_pages#beer'
+  match '/olutkaappi', to: 'static_pages#olutkaappi'
 
   resources :beers
   # The priority is based upon order of creation:
