@@ -7,6 +7,6 @@ class StaticPagesController < ApplicationController
   end
 
   def olutsivu
-  	@beer = Beer.all[params[:id].to_i]
+  	@beer = Beer.find(params[:id].to_i)
   end
 end
