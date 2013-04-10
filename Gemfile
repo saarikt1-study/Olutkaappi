@@ -7,8 +7,7 @@ gem 'bootstrap-sass', '2.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 # gem 'sqlite3'
-# gem 'pg'#, '0.12.2'
-gem 'sqlite3'
+gem 'pg'#, '0.12.2'
 
 
 
