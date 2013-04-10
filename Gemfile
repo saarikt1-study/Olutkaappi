@@ -30,7 +30,7 @@ group :test, :development do
 	#gem 'turn'
 	gem 'rspec-rails'
 	gem 'capybara'
-    #gem 'sqlite3', :require => 'sqlite3'
+    gem 'sqlite3', :require => 'sqlite3'
 	gem 'guard'
     gem 'guard-spork'
     gem 'spork'
