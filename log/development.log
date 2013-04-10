@@ -6514,3 +6514,58 @@ Served asset /application.js - 304 Not Modified (0ms)
 
 Started GET "/assets/rails.js?body=1" for 127.0.0.1 at 2013-04-10 13:50:08 +0300
 Served asset /rails.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-10 14:44:09 +0300
+Processing by BeersController#index as HTML
+  [1m[36mBeer Load (0.0ms)[0m  [1mSELECT "beers".* FROM "beers" [0m
+  Rendered beers/_form.html.erb (15.6ms)
+  Rendered beers/index.html.erb within layouts/application (15.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 31ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-10 14:44:09 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beers.css?body=1" for 127.0.0.1 at 2013-04-10 14:44:10 +0300
+Served asset /beers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-04-10 14:44:10 +0300
+Served asset /custom.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2013-04-10 14:44:10 +0300
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-10 14:44:10 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-10 14:44:10 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.js?body=1" for 127.0.0.1 at 2013-04-10 14:44:10 +0300
+Served asset /rails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-04-10 14:44:10 +0300
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-10 14:44:10 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beers.js?body=1" for 127.0.0.1 at 2013-04-10 14:44:10 +0300
+Served asset /beers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.js?body=1" for 127.0.0.1 at 2013-04-10 14:44:10 +0300
+Served asset /rails.js - 304 Not Modified (0ms)
