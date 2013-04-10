@@ -5,9 +5,9 @@
 <ul>
 	<% for beer in @beers %>
 	<li id="beer_<%= beer.id%>">
-		<%= beer.name  %> (<%= beer.beer_type %>, <%= beer.alc %>), panimo: <%= beer.brewery %>, valmistusmaa: <%= beer.country %>
+		<a href="olutsivu?id=<%=beer.id%>"><%= beer.name  %></a> (<%= beer.beer_type %>, <%= beer.alc %>), panimo: <%= beer.brewery %>, valmistusmaa: <%= beer.country %>
 		| <%= link_to 'Muokkaa', edit_beer_path(beer) %>
-		| <%= button_to 'Poista', beer_path(beer), :method => :delete, :confirm => "Are you sure ?" %>
+		| <%= link_to 'Poista', beer, :method => 'delete' %>
 	</li>
 	<%end%>
 </ul>

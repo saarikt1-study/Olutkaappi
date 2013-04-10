@@ -6,7 +6,7 @@ class StaticPagesController < ApplicationController
   def search
   end
 
-  def beer
-  	@beer = Beer.all[params[:id].to_i]
+  def olutsivu
+  	@beer = Beer.find params[:id]
   end
 end
