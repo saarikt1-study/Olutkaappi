@@ -7,7 +7,7 @@ gem 'bootstrap-sass', '2.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+
 
 
 
@@ -32,6 +32,7 @@ group :test, :development do
 	gem 'guard'
   gem 'guard-spork'
   gem 'spork'
+  gem 'sqlite3-ruby', :require => 'sqlite3'
 end
 
 group :production do
