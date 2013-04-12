@@ -9,4 +9,7 @@ class StaticPagesController < ApplicationController
   def olutsivu
   	@beer = Beer.find params[:id]
   end
+
+  def oluttietoa
+  end
 end

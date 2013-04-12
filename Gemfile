@@ -6,9 +6,8 @@ gem 'bootstrap-sass', '2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# gem 'sqlite3'
-gem 'pg'#, '0.12.2'
 
+gem 'sqlite3-ruby', :require => 'sqlite3'
 
 
 
@@ -30,10 +29,14 @@ group :test, :development do
 	#gem 'turn'
 	gem 'rspec-rails'
 	gem 'capybara'
-    gem 'sqlite3', :require => 'sqlite3'
 	gem 'guard'
-    gem 'guard-spork'
-    gem 'spork'
+  gem 'guard-spork'
+  gem 'spork'
+end
+
+group :production do
+  # gem 'sqlite3'
+  gem 'pg'#, '0.12.2'
 end
 
 # group :test do
