@@ -22,7 +22,7 @@
                     <tbody>
                         <% @results.each do |result| %>
                         <tr>
-                            <td><%= result.name%></td>
+                            <td><a href="olutsivu?id=<%=result.id%>"><%= result.name%></a></td>
                             <td><%= result.alc%></td>
                             <td><%= result.beer_type%></td>
                             <td><%= result.brewery%></td>
