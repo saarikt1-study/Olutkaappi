@@ -1,4 +1,4 @@
 <%= form_tag :controller => 'static_pages', :action => 'search', :method => 'get' do %>
-	<%= text_field_tag :search, params[:search], :id => 'search_field' %>
-	<%= submit_tag "Search", id:'Haku' %>
+	<%= text_field_tag :search, params[:search], :placeholder => 'Kirjoita hakusanat' %>
+	<%= button_tag "Hae", :type => 'submit', :class => 'btn' %>
 <% end %>
