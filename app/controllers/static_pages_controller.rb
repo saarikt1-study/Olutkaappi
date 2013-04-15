@@ -7,7 +7,10 @@ class StaticPagesController < ApplicationController
   end
 
   def olutsivu
-  	@beer = Beer.find params[:id]
+  	@beer = Beer.find_by_name(params[:name])
+    if @beer == nil
+      redirect_to '/search'
+    end
   end
 
   def oluttietoa

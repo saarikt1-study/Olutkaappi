@@ -5,7 +5,7 @@ Beers::Application.routes.draw do
 
   match '/home', to: 'static_pages#home'
   match '/search', to: 'static_pages#search'
-  match '/olutsivu', to: 'static_pages#olutsivu'
+  match '/olutsivu/:name', to: 'static_pages#olutsivu'
   match '/oluttietoa', to: 'static_pages#oluttietoa'
 
   resources :beers
