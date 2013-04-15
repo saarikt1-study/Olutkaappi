@@ -12,4 +12,8 @@ class StaticPagesController < ApplicationController
 
   def oluttietoa
   end
+
+  def search
+    @results = Beer.search(params[:search])
+  end
 end

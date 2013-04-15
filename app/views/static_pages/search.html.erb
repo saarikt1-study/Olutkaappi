@@ -7,6 +7,8 @@
                 <button type="submit" class="btn">Hae</button>
             </fieldset>
         </form>
+
+        <%= render 'searchfield' %>
     </div>
 </div>
 <div class="row-fluid">
@@ -16,30 +18,22 @@
                     <thead>
                         <tr>
                             <th>Nimi</th>
-                            <th>Arvostelu</th>
+                            <th>Alkoholi</th>
+                            <th>Tyyppi</th>
+                            <th>Panimo</th>
+                            <th>Valmistusmaa</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <% @results.each do |result| %>
                         <tr>
-                            <td>Lapin Kulta</td>
-                            <td>5.00</td>
+                            <td><%= result.name%></td>
+                            <td><%= result.alc%></td>
+                            <td><%= result.beer_type%></td>
+                            <td><%= result.brewery%></td>
+                            <td><%= result.country%></td>
                         </tr>
-                        <tr>
-                            <td>Grafenwalder</td>
-                            <td>3.75</td>
-                        </tr>
-                        <tr>
-                            <td>Koff</td>
-                            <td>3.74</td>
-                        </tr>
-                        <tr>
-                            <td>Not just another wit</td>
-                            <td>3.72</td>
-                        </tr>
-                        <tr>
-                            <td>Karjala</td>
-                            <td>2</td>
-                        </tr>
+                        <% end %>                        
                     </tbody>
                 </table>
     </div>
