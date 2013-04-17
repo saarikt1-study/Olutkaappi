@@ -1,9 +1,0 @@
-<%= form_for Beer.new do |f| %>
-	<%= f.label :Nimi %>
-	<%= f.text_field :name, id:'name' %>
-	<%= f.label :Tyyppi %>
-	<%= f.text_field :beer_type, id:'beer_type' %>
-	<%= f.label :Alc %>
-	<%= f.text_field :alc, id:'alc'%>
-	<%= submit_tag "Lisää olut", id:"Lisaa olut" %>
-<% end %>

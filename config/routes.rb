@@ -1,11 +1,11 @@
 Beers::Application.routes.draw do
  
-  root :to => 'Beers#index'
+  root :to => 'static_pages#home'
   get "beers/index"
 
   match '/home', to: 'static_pages#home'
   match '/search', to: 'static_pages#search'
-  match '/olutsivu', to: 'static_pages#olutsivu'
+  match '/olutsivu/:name', to: 'static_pages#olutsivu'
   match '/oluttietoa', to: 'static_pages#oluttietoa'
   match '/olutlasit', to: 'static_pages#olutlasit'
   match '/vehnaolut', to: 'static_pages#vehnaolut'
