@@ -12,4 +12,10 @@ class StaticPagesController < ApplicationController
 
   def oluttietoa
   end
+
+  def olutlasit
+  end
+
+  def vehnaolut
+  end
 end
