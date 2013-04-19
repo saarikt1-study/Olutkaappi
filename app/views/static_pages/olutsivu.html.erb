@@ -9,7 +9,11 @@ ChangeTitle();
 <p>
 
   <section id="kuva">
-  	<img src="<%=@beer.image%>" alt="<%=@beer.image%>"/> 
+    <% if @beer.image != nil %>
+  	  <img src="<%=@beer.image%>" alt="<%=@beer.image%>"/> 
+    <% else %>
+      <img src="images/bottle.jpg" alt="placeholder image"/>
+    <% end %>
   </section>
 
   <section id="nimi">
