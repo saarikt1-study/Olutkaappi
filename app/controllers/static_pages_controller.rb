@@ -20,6 +20,7 @@ class StaticPagesController < ApplicationController
   end
 
   def vehnaolut
+  end
 
   def search
     @results = Beer.search(params[:search])
