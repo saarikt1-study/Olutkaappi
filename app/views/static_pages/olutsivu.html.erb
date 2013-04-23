@@ -6,6 +6,7 @@ function ChangeTitle() {
 ChangeTitle();
 </script>
 
+
 <div class="row-fluid">
   <div class="span3">
       <h1> <%=@beer.name%> </h2>
@@ -17,8 +18,11 @@ ChangeTitle();
 
 <div class="row-fluid">
   <div class="span3">
-    <!-- <img src="<%=@beer.image%>" alt="<%=@beer.image%>"/>  -->
-    <img src="/images/bottle.jpg" width="150px">
+    <% if @beer.image != nil %>
+      <img src="<%=@beer.image%>" alt="<%=@beer.image%>"/>
+    <% else %>
+      <img src="/images/bottle.jpg">
+    <% end %>
   </div>
   <div class="span5">
     <p>

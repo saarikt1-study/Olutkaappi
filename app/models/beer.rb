@@ -2,7 +2,7 @@ class Beer < ActiveRecord::Base
 	attr_accessible :name, :beer_type, :alc, :brewery, :country, :img
 
 	validates :name, :beer_type, :alc, :brewery, :country, presence: true
-	validates :name, :uniqueness => true
+	validates :name, uniqueness: true
 
 	def self.search(search_cond)
 		if search_cond
