@@ -18,13 +18,28 @@ ChangeTitle();
 <div class="row-fluid">
   <div class="span3">
     <!-- <img src="<%=@beer.image%>" alt="<%=@beer.image%>"/>  -->
-    <img src="/images/bottle.jpg">
+    <img src="/images/bottle.jpg" width="150px">
   </div>
   <div class="span5">
-    <h4> <%=@beer.brewery%> </h3>
-    <h4> <%=@beer.alc%> </h3>
-    <h4> <%=@beer.beer_type%> </h3>
-    <h4> <%=@beer.country%> </h3>
+    <p>
+      <b>Panimo:</b> <br>
+      <%=@beer.brewery%> <br>
+    </p>
+
+    <p>
+      <b>Alkoholi:</b> <br>
+      <%=@beer.alc%> <br>
+    </p>
+
+    <p>
+      <b>Oluttyyppi:</b> <br>
+      <%=@beer.beer_type%> <br>
+    </p>
+
+    <p>
+      <b>Valmistusmaa:</b> <br>
+      <%=@beer.country%> 
+    </p>
   </div>
 </div>
 
