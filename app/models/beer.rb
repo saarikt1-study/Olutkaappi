@@ -1,5 +1,6 @@
 class Beer < ActiveRecord::Base
 	attr_accessible :name, :beer_type, :alc, :brewery, :country, :img
+	serialize :review_id_array
 
 	validates :name, :beer_type, :alc, :brewery, :country, presence: true
 	validates :name, uniqueness: true
