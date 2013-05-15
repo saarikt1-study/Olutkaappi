@@ -13,8 +13,8 @@ gem 'jquery-rails'
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
-  gem 'therubyracer', :platform => :ruby
-  gem 'less-rails', :platform => :ruby
+ # gem 'therubyracer', :platform => :ruby
+ # gem 'less-rails', :platform => :ruby
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
