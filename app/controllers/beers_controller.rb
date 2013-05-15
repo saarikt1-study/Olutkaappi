@@ -1,7 +1,9 @@
 class BeersController < ApplicationController
   def index
   	@beers = Beer.all
-  	@beer = Beer.new
+    @users = User.all
+    @reviews = Review.all
+    @beer = Beer.new
   end
 
   def create
