@@ -7,8 +7,16 @@ Beers::Application.routes.draw do
   match '/search', to: 'static_pages#search'
   match '/olutsivu/:name', to: 'static_pages#olutsivu'
   match '/oluttietoa', to: 'static_pages#oluttietoa'
+  match '/oluen_valmistus', to: 'static_pages#oluen_valmistus'
   match '/olutlasit', to: 'static_pages#olutlasit'
   match '/vehnaolut', to: 'static_pages#vehnaolut'
+  match '/ale', to: 'static_pages#ale'
+  match '/stout_ja_porter', to: 'static_pages#stout_ja_porter'
+  match '/erikoisolut', to: 'static_pages#erikoisolut'
+  match '/lager', to: 'static_pages#lager'
+  match '/tumma_lager', to: 'static_pages#tumma_lager'
+  match '/pils', to: 'static_pages#pils'
+  match '/vahva_lager', to: 'static_pages#vahva_lager'
 
   resources :beers
   # The priority is based upon order of creation:

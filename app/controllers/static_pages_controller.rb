@@ -16,10 +16,34 @@ class StaticPagesController < ApplicationController
   def oluttietoa
   end
 
+  def oluen_valmistus
+  end
+
   def olutlasit
   end
 
   def vehnaolut
+  end
+
+  def ale
+  end
+
+  def stout_ja_porter
+  end
+
+  def erikoisolut
+  end
+
+  def lager
+  end
+
+  def tumma_lager
+  end
+
+  def pils
+  end
+
+  def vahva_lager
   end
 
   def search
