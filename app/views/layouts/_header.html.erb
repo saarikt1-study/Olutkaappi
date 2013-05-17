@@ -14,7 +14,11 @@
                 <li><%= render 'static_pages/searchfield' %></li> 
                 <li><%= link_to "Tarkennettu haku",    search_path %></li>
                 <li><%= link_to "Oluttietoa", oluttietoa_path %></li>
-                <li><a href="#">Login</a></li>
+                <% if !session[:current_user] %>
+                  <li><a href="#">Login</a></li>
+                <% else %>
+                  <li><a href="#">Oma sivu</a></li>
+                <% end %>
               </ul>
             </nav>
           </div>
