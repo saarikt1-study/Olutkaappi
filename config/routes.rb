@@ -19,6 +19,7 @@ Beers::Application.routes.draw do
   match '/vahva_lager', to: 'static_pages#vahva_lager'
 
   resources :beers
+  resources :users
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

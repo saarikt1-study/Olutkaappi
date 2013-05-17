@@ -1,6 +1,7 @@
 class StaticPagesController < ApplicationController
   def home
     @beer = Beer.all[params[:id].to_i]
+    @user = User.new
   end
 
   def search
