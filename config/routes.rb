@@ -20,6 +20,7 @@ Beers::Application.routes.draw do
   match '/omasivu', to: 'static_pages#omasivu'
 
   resources :beers
+  resources :users
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

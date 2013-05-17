@@ -1,5 +1,9 @@
 <h1>Oluita</h1>
 
+<% if session[:current_user] %>
+	<p>Olet: <%= session[:current_user].email %></p>
+<% end %>
+
 <%= render 'form' %>
 
 <ul>

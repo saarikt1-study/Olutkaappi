@@ -56,21 +56,21 @@ function toggleOverlay(){
           Rekisteröidy, niin pääset käyttämään tätä superhyperhienoa palvelua koko komeudessaan! Syötä vain tietosi ja hups, oletkin jo jäsen! Jee! Pohjanmaan kautta! Bottoms up!
         </p>
 
-        <form>
+        <%= form_for @user do |f| %>
           <fieldset>
-            <label>Sähköpostiosoite</label>
-            <input type="text" placeholder="käyttäjä@posti.fi">
-            <label>Salasana</label>
-            <input type="password" placeholder="*********">
+            <%= f.label :Sähköpostiosoite %>
+            <%= f.text_field :email, placeholder: "käyttäjä@posti.fi" %>
+            <%= f.label :Salasana %>
+            <%= f.text_field :password, placeholder:"*********"%>
             <br>
             <input type="checkbox">
             Hyväksyn
             <a onmousedown="toggleOverlay()">käyttöehdot</a>
             <br>
             <br>
-            <button type="submit" class="btn">Rekisteröidy</button>
+            <%= submit_tag "Rekisteröidy", class:"btn" %>
           </fieldset>
-        </form>
+        <% end %>
       </div>
 
       <div class="row-fluid">
