@@ -17,6 +17,7 @@ Beers::Application.routes.draw do
   match '/tumma_lager', to: 'static_pages#tumma_lager'
   match '/pils', to: 'static_pages#pils'
   match '/vahva_lager', to: 'static_pages#vahva_lager'
+  match '/omasivu', to: 'static_pages#omasivu'
 
   resources :beers
   # The priority is based upon order of creation:

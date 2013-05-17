@@ -46,6 +46,9 @@ class StaticPagesController < ApplicationController
   def vahva_lager
   end
 
+  def omasivu
+  end
+
   def search
     @results = Beer.search(params[:search])
   end
