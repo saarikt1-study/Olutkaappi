@@ -8,7 +8,6 @@ class BeersController < ApplicationController
 
   def create
   	Beer.create params[:beer]
-    reset_session
   	redirect_to :back
   end
 

@@ -55,4 +55,9 @@ class StaticPagesController < ApplicationController
   def search
     @results = Beer.search(params[:search])
   end
+
+  def logout
+    reset_session
+    redirect_to :home
+  end
 end

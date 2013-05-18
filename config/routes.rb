@@ -18,6 +18,8 @@ Beers::Application.routes.draw do
   match '/pils', to: 'static_pages#pils'
   match '/vahva_lager', to: 'static_pages#vahva_lager'
 
+  match '/uloskirjaus', to: 'static_pages#logout'
+
   resources :beers
   resources :users
   resources :reviews
