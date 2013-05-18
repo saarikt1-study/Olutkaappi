@@ -12,7 +12,9 @@ ChangeTitle();
       <h1> <%=@beer.name%> </h2>
   </div>
   <div class="span3">
-    <p>Tähän tulee tähtiä.</p>
+    <p><b>Tähdet: </b>
+      <%="%.2f" % (Review.sum(:stars, :conditions => ['beer_id = ?', @beer.id]) / Review.count(:conditions => ['stars <> "" AND beer_id = ?', @beer.id]).to_f) %>
+    </p>
   </div>
 </div>
 
