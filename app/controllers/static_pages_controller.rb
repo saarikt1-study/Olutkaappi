@@ -14,7 +14,7 @@ class StaticPagesController < ApplicationController
       @review = Review.find(:all, :conditions => ['user_id = ?', session[:current_user].id]).first
     end
     if @review == nil
-      @review = Review.new
+      @review = Review.create
     end
     if @beer == nil
       redirect_to '/search'
