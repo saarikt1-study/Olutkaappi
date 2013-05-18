@@ -20,6 +20,7 @@ Beers::Application.routes.draw do
 
   resources :beers
   resources :users
+  resources :reviews
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

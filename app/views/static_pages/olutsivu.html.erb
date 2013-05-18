@@ -47,17 +47,34 @@ ChangeTitle();
   </div>
 </div>
 
+<div class="kommentointiosio">
+  <%= form_for @review do |f|%>
+    <%= f.label :Otsikko %>
+    <%= f.text_field :title, id:'title' %>
+    <%= f.label :Tähdet %>
+    <%= f.text_field :stars, id:'stars' %>
+    <%= f.label :Arvio %>
+    <%= f.text_area :review_text, id:'review_text' %>
+
+    <%= hidden_field_tag "beer_id", @beer.id %>
+
+    <%= submit_tag "Lähetä arvio", id:"lisaa" %>
+  <% end %>
+</div>
+
 <div class="row-fluid">
   <table class="table table-bordered">
   <tbody>
-    <tr>
-      <td>
-        Toskovt1 <br>
-        19.4.2013 <br>
-        4/5
-      </td>
-      <td>Olut oli ihan hyvää. Olen myös juonut parempiakin oluitakin. Ehkä oli liian lämmin. Hyvä vaahto.</td>
-    </tr>
+    <% for review in @reviews %>
+      <tr>
+        <td>
+          <%= User.find(review.user_id).username %> <br>
+          <%= review.created_at.strftime("%d.%m.%Y") %> <br>
+          Tähtiä: <%= review.stars %>
+        </td>
+        <td><%= review.review_text %></td>
+      </tr>
+    <%end%>
   </tbody>
 </table>
 
