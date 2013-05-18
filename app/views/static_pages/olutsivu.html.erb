@@ -16,6 +16,7 @@ ChangeTitle();
       <% stars_sum = Review.sum(:stars, :conditions => ['beer_id = ?', @beer.id]) 
         if stars_sum > 0 
           stars_avg = (stars_sum / Review.count(:conditions => ['stars <> "" AND beer_id = ?', @beer.id]).to_f)
+          stars_avg = (stars_avg * 2 + 0.5).to_i / 2.to_f
           while stars_avg >= 1%>
             &#9733;
           <%
