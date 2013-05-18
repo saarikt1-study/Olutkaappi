@@ -12,10 +12,19 @@ ChangeTitle();
       <h1> <%=@beer.name%> </h2>
   </div>
   <div class="span3">
-    <p id="stars"><b>Tähdet: </b>
-      <% stars_sum = Review.sum(:stars, :conditions => ['beer_id = ?', @beer.id]) %>
-      <% if stars_sum > 0 %>
-        <%="%.2f" % (stars_sum / Review.count(:conditions => ['stars <> "" AND beer_id = ?', @beer.id]).to_f) %>
+    <p id="stars">
+      <% stars_sum = Review.sum(:stars, :conditions => ['beer_id = ?', @beer.id]) 
+        if stars_sum > 0 
+          stars_avg = (stars_sum / Review.count(:conditions => ['stars <> "" AND beer_id = ?', @beer.id]).to_f)
+          while stars_avg >= 1%>
+            &#9733;
+          <%
+            stars_avg = stars_avg - 1; 
+          end
+          if stars_avg >= 0.5 %>
+            &#9734;
+          <% end %>
+
       <% else %>
         Ei vielä arvosteltu
       <% end %>
