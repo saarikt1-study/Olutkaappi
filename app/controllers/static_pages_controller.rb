@@ -10,7 +10,10 @@ class StaticPagesController < ApplicationController
   def olutsivu
   	@beer = Beer.find_by_name(params[:name])
     @reviews = Review.find(:all, :conditions => ['beer_id = ?', @beer.id])
-    @review = Review.new
+    @review = Review.find(:all, :conditions => ['user_id = ?', session[:current_user].id]).first
+    if @review == nil
+      @review = Review.new
+    end
     if @beer == nil
       redirect_to '/search'
     end

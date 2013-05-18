@@ -74,7 +74,11 @@ ChangeTitle();
 
     <%= hidden_field_tag "beer_id", @beer.id %>
 
-    <%= submit_tag "Lähetä arvio", id:"lisaa" %>
+    <% if @review.user_id != nil %>
+      <%= submit_tag "Päivitä arvio", id:"paivita" %>
+    <% else %>
+      <%= submit_tag "Lähetä arvio", id:"lisaa" %>
+    <% end %>
   <% end %>
 </div>
 
