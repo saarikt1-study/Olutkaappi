@@ -2,10 +2,10 @@ class ReviewsController < ApplicationController
 	def create
 		@review = Review.create params[:review]
 		@review.user_id = session[:current_user].id
-		if !Review.count(:conditions => ['beer_id = ?', params[:beer_id]])
+	#	if !Review.count(:conditions => ['beer_id = ?', params[:beer_id]])
 			@review.beer_id = params[:beer_id]
 			@review.save
-		end
+	#	end
 		redirect_to :back
 	end
 
