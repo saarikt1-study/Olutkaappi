@@ -12,7 +12,8 @@ class StaticPagesController < ApplicationController
     @reviews = Review.find(:all, :conditions => ['beer_id = ?', @beer.id])
     if session[:current_user] != nil
       @review = Review.find(:all, :conditions => ['user_id = ?', session[:current_user].id]).first
-    else
+    end
+    if @review == nil
       @review = Review.new
     end
     if @beer == nil
