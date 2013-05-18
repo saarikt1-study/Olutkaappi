@@ -60,6 +60,8 @@ function toggleOverlay(){
 
         <%= form_for @user do |f| %>
           <fieldset>
+            <%= f.label :Käyttäjänimi %>
+            <%= f.text_field :username, placeholder: "KalleJuoKaljaa69" %>
             <%= f.label :Sähköpostiosoite %>
             <%= f.text_field :email, placeholder: "käyttäjä@posti.fi" %>
             <%= f.label :Salasana %>

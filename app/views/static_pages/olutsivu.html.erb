@@ -72,7 +72,10 @@ ChangeTitle();
           <%= review.created_at.strftime("%d.%m.%Y") %> <br>
           Tähtiä: <%= review.stars %>
         </td>
-        <td><%= review.review_text %></td>
+        <td>
+          <b><%= review.title %></b><br>
+          <%= review.review_text %>
+        </td>
       </tr>
     <%end%>
   </tbody>
