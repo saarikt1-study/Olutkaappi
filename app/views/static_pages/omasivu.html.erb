@@ -5,59 +5,63 @@
     <div class="row-fluid">
 
       <div class="span3">
-        <img id="user_img" src="/images/bottle.jpg">
-      </div>
+        <img id="user_img" src="/images/bottle.jpg"></div>
       <!--/span-->
 
       <div class="span6">
-        <h3> <%=session[:current_user].username %></h3>
-        <h5> <%=session[:current_user].email %></h5>
-      </div>
-
-      <div class="row-fluid">
-
-        <div class="span6">
-          <h3>Arvostellut oluet</h3>
-          <table class="table table-condensed table-striped">
-            <thead>
-              <tr>
-                <th>Olut</th>
-                <th>Tähdet</th>
-                <th>Otsikko</th>
-              </tr>
-            </thead>
-            <tbody>
-              <% for review in @reviews %>
-              <tr>
-                <td><%= Beer.find(review.beer_id).name %></td>
-                <td><%= review.stars %></td>
-                <td><%= review.title %></td>
-              </tr>
-              <% end %>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="span6">
-          <h3>Juodut oluet</h3>
-          <table class="table table-condensed table-striped">
-          <thead>
-              <tr>
-                <th>Olut</th>
-                <th>Juontikerrat</th>
-              </tr>
-            </thead>
-            <tbody>
-              <% for relation in @relations %>
-              <tr>
-                <td><%= Beer.find(relation.beer_id).name %></td>
-                <td><%= relation.number_of_drinks %></td>
-              </tr>
-              <% end %>
-            </tbody>
-          </table>
-        </div>
+        <h3>
+          <%=session[:current_user].username %></h3>
+        <h5>
+          <%=session[:current_user].email %></h5>
       </div>
     </div>
+    <div class="row-fluid">
+
+      <div class="span6">
+        <h3>Arvostellut oluet</h3>
+        <table class="table table-condensed table-striped">
+          <thead>
+            <tr>
+              <th>Olut</th>
+              <th>Tähdet</th>
+              <th>Otsikko</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for review in @reviews %>
+            <tr>
+              <td>
+                <%= Beer.find(review.beer_id).name %></td>
+              <td>
+                <%= review.stars %></td>
+              <td>
+                <%= review.title %></td>
+            </tr>
+            <% end %></tbody>
+        </table>
+      </div>
+
+      <div class="span6">
+        <h3>Juodut oluet</h3>
+        <table class="table table-condensed table-striped">
+          <thead>
+            <tr>
+              <th>Olut</th>
+              <th>Juontikerrat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for relation in @relations %>
+            <tr>
+              <td>
+                <%= Beer.find(relation.beer_id).name %></td>
+              <td>
+                <%= relation.number_of_drinks %></td>
+            </tr>
+            <% end %></tbody>
+        </table>
+      </div>
+    </div>
+
   </div>
 </div>

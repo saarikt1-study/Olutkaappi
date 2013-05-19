@@ -6,8 +6,8 @@
  
     $( "#dialog-form" ).dialog({
       autoOpen: false,
-      height: 300,
-      width: 350,
+      height: "auto",
+      width: "auto",
       modal: false,
       position: {
         my: 'center top', at: 'center bottom', of: '#create-user'
@@ -32,14 +32,17 @@
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
+
       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
 
-      <img id="logo" src="../images/logo.png">
-      <%= link_to "olutkaappi", '/', id: "brand" %>
+      <img class="brand" id="logo" src="../images/logo.png">
+      <%= link_to "olutkaappi", '/', class: "brand", id: "brand" %>
+
+
 
       <!-- Everything in here gets hidden at 940px or less -->
       <div class="nav-collapse collapse">
