@@ -7,8 +7,18 @@ class Beer < ActiveRecord::Base
 
 	def self.search(search_cond)
 		if search_cond
+			results = nil
 			search_cond_lower = search_cond.downcase
-			find(:all, :conditions => ['lower(name) LIKE :s OR lower(beer_type) LIKE :s OR lower(brewery) LIKE :s OR lower(country) LIKE :s', :s => "%#{search_cond_lower}%"])
+			search_conds = search_cond_lower.strip.split
+			search_conds.each do |cond|
+				if results == nil
+					results = find(:all, :conditions => ['lower(name) LIKE :s OR lower(beer_type) LIKE :s OR lower(brewery) LIKE :s OR lower(country) LIKE :s', :s => "%#{cond}%"])
+				else
+					results = results | find(:all, :conditions => ['lower(name) LIKE :s OR lower(beer_type) LIKE :s OR lower(brewery) LIKE :s OR lower(country) LIKE :s', :s => "%#{cond}%"])
+				end
+			end
+		#	find(:all, :conditions => ['lower(name) LIKE :s OR lower(beer_type) LIKE :s OR lower(brewery) LIKE :s OR lower(country) LIKE :s', :s => "%#{search_cond_lower}%"])
+			results
 		else
 			find(:all)
 		end
