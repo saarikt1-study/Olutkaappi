@@ -43,8 +43,8 @@ textarea {
 
 /* header */
 
-#logo {
-  float: left;
+#brand {
+ // float: left;
   margin-right: 10px;
   font-size: 1.7em;
   // color: #fff;
@@ -55,7 +55,7 @@ textarea {
   line-height: 1;
 }
 
-#logo:hover {
+#brand:hover {
    color: #D1BBA4;
   text-decoration: none;
 }
@@ -63,6 +63,14 @@ textarea {
 #search {
   margin-bottom: 0px;
   margin-top: 6px;
+}
+
+#user_img {
+  height: 300px;
+}
+
+#logo {
+  height: 50px;
 }
 
 // div.navbar-inner {
