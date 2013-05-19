@@ -22,12 +22,15 @@ function toggleOverlay(){
   <button id="closeButton" onmousedown="toggleOverlay()">X</button>
   <h3>Käyttöehdot</h3>
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Käyttäessään Olutkaappia käyttäjät sitoutuvat noudattamaan sivuston käyttösääntöjä.<br> <br>
+
+Olutkaappi ei vastaa sivuilla olevan tiedon oikeellisuudesta. Esimerkiksi oluiden tiedot haetaan ulkopuolisista palveluista, jotka vastaavat kyseisistä tiedoista. Oikeudet palvelun sisältöön ovat Olutkaapilla ja sisällön kopiointi muuhun kuin yksityiseen käyttöön on kiellettyä.<br><br>
+
+Sivuilla olevien kuvien kopiointi on kiellettyä. <br><br>
+
+Käyttäjä on vastuussa toiminnastaan Olutkaapissa ja sivustolle lähettämästään materiaalista. Olutkaappi ei tarkasta sivustolle lähetettyjä kommentteja etukäteen, mutta poistaa näitä sääntöjä tai hyviä tapoja rikkovia tietoja sen jälkeen, kun rikkomus on tullut sivuston ylläpitäjän tietoon.  Kirjoittaessaan kommentteja Olutkaappiin käyttäjä luovuttaa Olutkaapille oikeuden kommenttien hyödyntämiseen palvelussa. Olutkaappi ei vastaa arvostelujen tai keskustelujen sisällöstä.<br><br>
+
+Käyttäjällä on mahdollisuus rekisteröityä palveluun omalla nimellään ja julkaista profiilissaan tietoja itsestään. Käyttäjä on vastuussa tiedoista, jotka hän palvelussa julkaisee. 
   </p>
   <button onmousedown="toggleOverlay()">Sulje ikkuna</button>
 
@@ -42,10 +45,9 @@ function toggleOverlay(){
       <div class="span6">
         <h3>Olutkaappi - Mikä se on?</h3>
         <p>
-          Olutkaappi tarjoaa suomalaisille tietoa oluista. Sen keksijät Lauri, Tommi ja
-          Tiina myivät palvelun vuoden kehityksen jälkeen 5 miljoonalla dollarilla
-          Googlelle ja elelevät nyt kukin tahoillaan Havajilla, Monte Carlossa ja Ranskan
-          Rivieralla.
+          Olutkaappi on suomenkielinen olutpalvelu suomalaisille. Palvelu tarjoaa kuvauksia ja arvosteluja oluista sekä yleistä oluttietoutta, ja sitä käyttämään ovat tervetulleita kaikki oluen ystävä <br><br>
+
+Rekisteröityneet käyttäjät saavat juomatottumuksiensa perusteella olutsuosituksia sekä mahdollisuuden seurata juomiaan oluita. He voivat myös jakaa olutkokemuksiaan sosiaalisessa mediassa. Kaikki tämä kätevästi Olutkaapissa! Kippis!
         </p>
       </div>
       <!--/span-->
@@ -53,7 +55,7 @@ function toggleOverlay(){
       <div class="span6">
         <h3>Rekisteröityminen</h3>
         <p>
-          Rekisteröidy, niin pääset käyttämään tätä superhyperhienoa palvelua koko komeudessaan! Syötä vain tietosi ja hups, oletkin jo jäsen! Jee! Pohjanmaan kautta! Bottoms up!
+          Rekisteröityminen on nopeaa ja ilmaista! Rekisteröityneenä käyttäjänä voit muun muassa seurata juomiasi oluita ja saada suosituksia oluista, joita sinun kannattaisi kokeilla.
         </p>
 
         <%= form_for @user do |f| %>
@@ -78,10 +80,9 @@ function toggleOverlay(){
       <div class="row-fluid">
 
         <div class="span6">
-          <h3>Top 10 -bisset</h3>
+          <h3>Top 10 bisset</h3>
           <p>
-            Maailman mahtavimmat maltaat! Bönöisimmät bisset! Oivallisen odotetut oluet!
-                Tsek tis aut!
+            Olutkaapin käyttäjät ovat äänestäneet parhaiksi oluiksi:
           </p>
           <table class="table table-condensed table-striped">
             <thead>
