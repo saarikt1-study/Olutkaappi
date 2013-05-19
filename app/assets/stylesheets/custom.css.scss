@@ -70,17 +70,22 @@ textarea {
 }
 
 #logo {
-  height: 40px;
+  height: 35px;
+  text-align:center;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding:3px;
+  margin-right: 10px;
 }
 
 .ui-dialog { 
   position: absolute
 }
 
-// div.navbar-inner {
-//   padding: 0px;
-//   height: 42px;
-// }
+div.navbar-inner {
+  padding: 0px;
+  height: 42px;
+}
 
 // /* footer */
 
