@@ -27,7 +27,7 @@
 <ul>
 	<% for review in @reviews %>
 	<li id="review_<%= review.id%>">
-		<%= review.title  %> (<%= review.stars %>) <%= review.review_text %>
+		<%= review.title  %> (<%= review.stars %>) <%= review.review_text %>, kalja: <%= review.beer_id %>, käyttäjä: <%= review.user_id %>
 	</li>
 	<%end%>
 </ul>

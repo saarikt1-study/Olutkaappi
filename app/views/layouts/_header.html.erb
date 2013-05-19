@@ -17,9 +17,10 @@
                 
 
                 <% if !session[:current_user] %>
-                  <li><a href="#">Login</a></li>
+                  <li><a href="#">Kirjaudu sisään</a></li> 
                 <% else %>
                   <li><%= link_to "Oma Sivu", omasivu_path %></li>
+                  <li><%= link_to "Kirjaudu ulos", uloskirjaus_path %></li>
                 <% end %>
               </ul>
             </nav>
