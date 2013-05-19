@@ -32,7 +32,7 @@
       <div class="row-fluid">
 
         <div class="span6">
-          <h3>Widget 3</h3>
+          <h3>Arvostellut oluet</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -44,65 +44,39 @@
           <table class="table table-condensed table-striped">
             <thead>
               <tr>
-                <th>Nimi</th>
-                <th>Arvostelu</th>
+                <th>Olut</th>
+                <th>Tähdet</th>
+                <th>Otsikko</th>
               </tr>
             </thead>
             <tbody>
+              <% for review in @reviews %>
               <tr>
-                <td>Lapin Kulta</td>
-                <td>5.00</td>
+                <td><%= Beer.find(review.beer_id).name %></td>
+                <td><%= review.stars %></td>
+                <td><%= review.title %></td>
               </tr>
-              <tr>
-                <td>Grafenwalder</td>
-                <td>3.75</td>
-              </tr>
-              <tr>
-                <td>Koff</td>
-                <td>3.74</td>
-              </tr>
-              <tr>
-                <td>Not just another wit</td>
-                <td>3.72</td>
-              </tr>
-              <tr>
-                <td>Karjala</td>
-                <td>2</td>
-              </tr>
+              <% end %>
             </tbody>
           </table>
         </div>
 
         <div class="span6">
-          <h3>Widget 4</h3>
+          <h3>Juodut oluet</h3>
           <table class="table table-condensed table-striped">
-            <thead>
+          <thead>
               <tr>
-                <th>Nimi</th>
-                <th>Arvostelu</th>
+                <th>Olut</th>
+                <th>Juontikerrat</th>
               </tr>
             </thead>
             <tbody>
+              <% for relation in @relations %>
               <tr>
-                <td>Ei tippa tapa.</td>
-                <td>5.00</td>
+                <td><%= Beer.find(relation.beer_id).name %></td>
+                <td><%= relation.number_of_drinks %></td>
               </tr>
-              <tr>
-                <td>Omena ei putoa kauas puusta.</td>
-                <td>3.75</td>
-              </tr>
-              <tr>
-                <td>Hurraa, Wappu tulee!</td>
-                <td>3.74</td>
-              </tr>
-              <tr>
-                <td>Kaksi päivää perjantaibibiksiin.</td>
-                <td>3.72</td>
-              </tr>
-              <tr>
-                <td>Sä olit tosi timmi tiimimimmi!</td>
-                <td>2</td>
-              </tr>
+              <% end %>
             </tbody>
           </table>
         </div>

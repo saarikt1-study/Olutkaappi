@@ -63,6 +63,8 @@ class StaticPagesController < ApplicationController
   end
 
   def omasivu
+    @reviews = Review.find(:all, :conditions => ['user_id = ?', session[:current_user].id])
+    @relations = BeerUserRelation.find(:all, :conditions => ['user_id = ?', session[:current_user].id])
   end
 
   def search
