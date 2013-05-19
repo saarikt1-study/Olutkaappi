@@ -1,0 +1,2 @@
+module BeerUserRelationsHelper
+end

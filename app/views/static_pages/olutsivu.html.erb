@@ -60,6 +60,15 @@ ChangeTitle();
       <b>Valmistusmaa:</b> <br>
       <%=@beer.country%> 
     </p>
+
+    <p>
+    <%= form_for @relation do |f| %>
+      <%= hidden_field_tag "user_id", session[:current_user].id %>
+      <%= hidden_field_tag "beer_id", @beer.id %>
+      <%= submit_tag "Join", id:"join" %>
+    <% end %>
+      Olet juonut oluen <%= @relation.number_of_drinks %> kertaa.
+    </p>
   </div>
 </div>
 
