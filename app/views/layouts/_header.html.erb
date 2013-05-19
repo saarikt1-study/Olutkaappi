@@ -14,10 +14,12 @@
                 <li><%= render 'static_pages/searchfield' %></li> 
                 <li><%= link_to "Tarkennettu haku",    search_path %></li>
                 <li><%= link_to "Oluttietoa", oluttietoa_path %></li>
+                
+
                 <% if !session[:current_user] %>
                   <li><a href="#">Kirjaudu sisään</a></li> 
                 <% else %>
-                  <li><a href="#">Oma sivu</a></li>
+                  <li><%= link_to "Oma Sivu", omasivu_path %></li>
                   <li><%= link_to "Kirjaudu ulos", uloskirjaus_path %></li>
                 <% end %>
               </ul>
