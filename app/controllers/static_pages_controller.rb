@@ -8,10 +8,18 @@ class StaticPagesController < ApplicationController
   end
 
   def olutsivu
-  	@beer = Beer.find_by_name(params[:name])
+    @beer = Beer.find_by_name(params[:name])
+
+    @relation = BeerUserRelation.new
+    
     @reviews = Review.find(:all, :conditions => ['beer_id = ?', @beer.id])
     if session[:current_user] != nil
       @review = Review.find(:all, :conditions => ['user_id = ?', session[:current_user].id]).first
+      @relations = BeerUserRelation.find(:all, :conditions => ['
+        user_id = ? AND beer_id = ?', session[:current_user].id, @beer.id])
+      if @relations != nil
+        @relation = @relations.first
+      end
     end
     if @review == nil
       @review = Review.create
@@ -55,6 +63,8 @@ class StaticPagesController < ApplicationController
   end
 
   def omasivu
+    @reviews = Review.find(:all, :conditions => ['user_id = ?', session[:current_user].id])
+    @relations = BeerUserRelation.find(:all, :conditions => ['user_id = ?', session[:current_user].id])
   end
 
   def search
