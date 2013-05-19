@@ -14,7 +14,9 @@
       },
       buttons: {
         "Kirjaudu sisään": function() {
+          window.location.href = "/kirjaudu?username="+name.val()+"&password="+password.val();
           allFields.removeClass( "ui-state-error" );
+          $.get("/kirjaudu?username=" + name + "&password=" + password, null,null,null);
         },
       },
       close: function() {

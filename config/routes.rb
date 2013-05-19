@@ -20,6 +20,7 @@ Beers::Application.routes.draw do
   match '/omasivu', to: 'static_pages#omasivu'
 
   match '/uloskirjaus', to: 'static_pages#logout'
+  match '/kirjaudu', to: 'static_pages#login'
 
   resources :beers
   resources :users

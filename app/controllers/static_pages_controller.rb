@@ -75,4 +75,14 @@ class StaticPagesController < ApplicationController
     reset_session
     redirect_to :home
   end
+
+  def login
+    user = User.find(:all, :conditions => ['username LIKE ? AND password LIKE ?', params[:username], params[:password]]).first
+    if user != nil
+      session[:current_user] = user
+      redirect_to :omasivu
+    else
+      redirect_to :back
+    end
+  end
 end
