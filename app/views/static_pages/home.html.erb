@@ -57,15 +57,14 @@ Käyttäjällä on mahdollisuus rekisteröityä palveluun omalla nimellään ja 
         <%= form_for @user do |f| %>
         <fieldset>
           <%= f.label :Käyttäjänimi %>
-          <%= f.text_field :username, placeholder: "KalleJuoKaljaa69" %>
+          <%= f.text_field :username, placeholder: "Nimimerkki" %>
           <%= f.label :Sähköpostiosoite %>
           <%= f.text_field :email, placeholder: "käyttäjä@posti.fi" %>
           <%= f.label :Salasana %>
-          <%= f.text_field :password, placeholder:"*********"%>
+          <%= f.password_field :password, placeholder:"*********"%>
           <br>
           <input type="checkbox">
-          Hyväksyn
-          <a id="avaaEhdot">käyttöehdot</a>
+          Hyväksyn <a id="avaaEhdot">käyttöehdot</a>
           <br>
           <br>
           <%= submit_tag "Rekisteröidy", class:"btn" %></fieldset>
