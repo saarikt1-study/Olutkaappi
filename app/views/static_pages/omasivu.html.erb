@@ -1,3 +1,9 @@
+<script>
+  $(function() {
+    $( document ).tooltip();
+  });
+  </script>
+
 <div class="container-fluid">
 
   <div class="container-fluid">
@@ -5,7 +11,7 @@
     <div class="row-fluid">
 
       <div class="span3">
-        <%= image_tag session[:current_user].gravatar_url %>
+        <%= image_tag(session[:current_user].gravatar_url, title: "Käyttäjäkuvat haetaan Gravatarista: https://fi.gravatar.com/") %>
       </div>
 
         <div class="span6">
