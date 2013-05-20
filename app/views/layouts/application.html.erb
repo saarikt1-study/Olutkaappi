@@ -3,14 +3,26 @@
 <head>
   <title>Olutkaappi</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-  <!-- <link href="app/assets/stylesheets/bootstrap.css" rel="stylesheet"> -->
+  <%= javascript_include_tag "application" %>
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+<!-- Bootstrap jQuery Plugins, compiled and minified -->
+<script src="/assets/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+<!-- Styles -->
+<link href="/assets/bootstrap.css" rel="stylesheet">
+<style>
+    body {
+    padding-top: 60px; /* When using the navbar-top-fixed */
+    }
+</style>
+<link href="/assets/bootstrap-responsive.css" rel="stylesheet">
+
 </head>
 <body>
-  <script src="/assets/bootstrap.min.js"></script>
 
 	<% flash.each do |name, message| %>
 		<div id="Flash_<%= name %>">
@@ -18,12 +30,11 @@
 		</div>
 	<% end %>
 
+
     <%= render 'layouts/header' %>
     
     <div class="container">
       <%= yield %>
     </div>
-
-    <!-- <%= render 'layouts/footer' %> -->
 </body>
 </html>
