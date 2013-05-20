@@ -53,6 +53,7 @@ GEM
     ffi (1.6.0)
     ffi (1.6.0-x86-mingw32)
     formatador (0.2.4)
+    gravtastic (3.2.6)
     guard (1.7.0)
       formatador (>= 0.2.4)
       listen (>= 0.6.0)
@@ -171,6 +172,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   coffee-rails (~> 3.2.1)
+  gravtastic
   guard
   guard-spork
   jquery-rails
