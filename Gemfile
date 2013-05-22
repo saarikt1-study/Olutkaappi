@@ -34,11 +34,12 @@ group :test, :development do
 	gem 'guard'
   gem 'guard-spork'
   gem 'spork'
-  gem 'sqlite3-ruby', :require => 'sqlite3'
+ # gem 'sqlite3-ruby', :require => 'sqlite3'
+ gem 'pg'
 end
 
 group :production do
-  gem 'sqlite3'
+  #gem 'sqlite3'
   gem 'pg'#, '0.12.2'
 end
 

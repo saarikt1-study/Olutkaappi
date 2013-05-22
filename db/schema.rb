@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(:version => 20130519072453) do
   create_table "beers", :force => true do |t|
     t.string   "name"
     t.string   "beer_type"
-    t.integer  "alc"
+    t.string   "alc"
     t.string   "brewery"
     t.string   "country"
     t.string   "img"
