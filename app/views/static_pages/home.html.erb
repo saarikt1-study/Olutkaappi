@@ -13,7 +13,15 @@
       });
     
   });
-  </script>
+
+    $(document).ready(function () {
+      if ($(window).width() < 900) {
+        $( "#dialog-modal" ).dialog( "option", "width", 300 );
+      }
+    });
+
+  
+</script>
 
 <div id="dialog-modal">
   <h3>Käyttöehdot</h3>
