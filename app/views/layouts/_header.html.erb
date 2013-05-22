@@ -1,4 +1,7 @@
+
+
 <script>
+
   $(function() {
     var name = $( "#name" ),
       password = $( "#password" ),
@@ -26,9 +29,15 @@
  
     $( "#create-user" )
       .click(function() {
-        $( "#dialog-form" ).dialog( "open" );
+        //$( "#dialog-form" ).dialog( "open" );
+        var n = noty({text: 'Käyttäjänimi tai salasana väärin!', type: "error", timeout: 2000});
       });
   });
+
+
+
+
+ 
  </script>
 
 <div class="navbar navbar-fixed-top">
