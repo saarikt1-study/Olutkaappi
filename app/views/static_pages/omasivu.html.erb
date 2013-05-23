@@ -35,9 +35,10 @@
           </thead>
           <tbody>
             <% for review in @reviews %>
+            <% beer = Beer.find(review.beer_id) %>
             <tr>
               <td>
-                <%= Beer.find(review.beer_id).name %></td>
+                <a href="olutsivu/<%=beer.name%>"><%= beer.name %></a></td>
               <td>
                 <%= review.stars %></td>
               <td>
@@ -58,13 +59,15 @@
           </thead>
           <tbody>
             <% for relation in @relations %>
+            <% beer = Beer.find(relation.beer_id) %>
             <tr>
               <td>
-                <%= Beer.find(relation.beer_id).name %></td>
+                <a href="olutsivu/<%=beer.name%>"><%= beer.name %></a></td>
               <td>
                 <%= relation.number_of_drinks %></td>
             </tr>
-            <% end %></tbody>
+            <% end %>
+          </tbody>
         </table>
       </div>
     </div>
