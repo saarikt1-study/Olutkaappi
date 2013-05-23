@@ -1,7 +1,7 @@
 Beers::Application.routes.draw do
  
- # root :to => 'static_pages#home'
-  root :to => 'beers#index'
+  root :to => 'static_pages#home'
+  #root :to => 'beers#index'
   get "beers/index"
 
   match '/home', to: 'static_pages#home'
