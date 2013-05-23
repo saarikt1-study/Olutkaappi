@@ -20,7 +20,7 @@ class Beer < ActiveRecord::Base
 		#	find(:all, :conditions => ['lower(name) LIKE :s OR lower(beer_type) LIKE :s OR lower(brewery) LIKE :s OR lower(country) LIKE :s', :s => "%#{search_cond_lower}%"])
 			return results
 		end
-		all()
+		return all()
 	end
 
 	def self.find_by_name(name)

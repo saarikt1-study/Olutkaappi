@@ -13,7 +13,8 @@ class StaticPagesController < ApplicationController
     
     @reviews = Review.find(:all, :conditions => ['beer_id = ?', @beer.id])
     if session[:current_user] != nil
-      @review = Review.find(:all, :conditions => ['user_id = ?', session[:current_user].id]).first
+      @review = Review.find(:all, :conditions => ['user_id = ? AND beer_id = ?', 
+        session[:current_user].id, @beer.id]).first
       @relations = BeerUserRelation.find(:all, :conditions => ['
         user_id = ? AND beer_id = ?', session[:current_user].id, @beer.id])
       if @relations != nil
