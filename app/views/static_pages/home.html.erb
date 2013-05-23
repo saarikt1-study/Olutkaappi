@@ -70,12 +70,11 @@ Käyttäjällä on mahdollisuus rekisteröityä palveluun omalla nimellään ja 
           <%= f.label :Salasana %>
           <%= f.password_field :password, placeholder:"*********"%>
           <br>
-          <%= f.check_box :terms %>
+          <input type="checkbox">
           Hyväksyn <a id="avaaEhdot">käyttöehdot</a>
           <br>
           <br>
-          <%= submit_tag "Rekisteröidy", class:"btn" %>
-        </fieldset>
+          <%= submit_tag "Rekisteröidy", class:"btn" %></fieldset>
         <% end %></div>
 
       <div class="row-fluid">

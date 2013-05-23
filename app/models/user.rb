@@ -1,8 +1,7 @@
 class User < ActiveRecord::Base
-	attr_accessible :username, :password, :email, :terms
+	attr_accessible :username, :password, :email
 	validates :email, uniqueness: true
 	validates :email, :password, presence: true
-	validates_acceptance_of :terms
     include Gravtastic
     gravtastic :secure => true,
               :filetype => :gif,
