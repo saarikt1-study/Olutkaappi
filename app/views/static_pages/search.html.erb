@@ -25,6 +25,12 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <% 
+                        if @results = nil
+                            @results = Beer.all
+                        end
+                        %>
+
                         <% @results.each do |result| %>
                         <tr>
                             <td><a href="olutsivu/<%=result.name%>"><%= result.name%></a></td>

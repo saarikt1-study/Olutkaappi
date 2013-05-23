@@ -6,10 +6,7 @@ class Beer < ActiveRecord::Base
 	validates :name, uniqueness: true
 
 	def self.search(search_cond)
-		config.logger = Logger.new(STDOUT)
-		logger.debug "conditions: #{search_cond}"
 		if search_cond
-			logger.debug "entered if"
 			results = nil
 			search_cond_lower = search_cond.downcase
 			search_conds = search_cond_lower.strip.split
