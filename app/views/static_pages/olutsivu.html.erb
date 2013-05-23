@@ -6,6 +6,7 @@ function ChangeTitle() {
 ChangeTitle();
 </script>
 
+<!-- STARS -->
 
 <div class="row-fluid">
   <div class="span3">
@@ -61,6 +62,10 @@ ChangeTitle();
       <%=@beer.country%> 
     </p>
 
+      <!-- JOIN (=I DRANK THIS) BUTTON -->
+
+    <% if session[:current_user] != nil %>
+
     <p>
     <%= form_for @relation do |f| %>
       <%= hidden_field_tag "user_id", session[:current_user].id %>
@@ -69,8 +74,12 @@ ChangeTitle();
     <% end %>
       Olet juonut oluen <%= @relation.number_of_drinks %> kertaa.
     </p>
+
+    <% end %>
   </div>
 </div>
+
+<!-- REVIEWS -->
 
 <% if session[:current_user] != nil %>
 <div class="kommentointiosio">

@@ -9,8 +9,7 @@ class StaticPagesController < ApplicationController
 
   def olutsivu
     @beer = Beer.find_by_name(params[:name])
-
-    @relation = BeerUserRelation.new
+    @relation = nil
     
     @reviews = Review.find(:all, :conditions => ['beer_id = ?', @beer.id])
     if session[:current_user] != nil
@@ -26,6 +25,10 @@ class StaticPagesController < ApplicationController
     end
     if @beer == nil
       redirect_to '/search'
+    end
+
+    if @relation == nil
+      @relation = BeerUserRelation.new
     end
   end
 
