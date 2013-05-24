@@ -96,7 +96,7 @@ ChangeTitle();
   <%= form_for @review do |f|%>
     <%= f.label :Otsikko %>
     <%= f.text_field :title, id:'title' %>
-    <%= f.label :Tähdet %>
+    <%= f.label :Tähdet (1–5) %>
     <%= f.text_field :stars, id:'stars' %>
     <%= f.label :Arvio %>
     <%= f.text_area :review_text, id:'review_text' %>
