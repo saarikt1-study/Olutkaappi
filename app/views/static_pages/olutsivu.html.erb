@@ -46,9 +46,9 @@ ChangeTitle();
 <div class="row-fluid">
   <div class="span3">
     <% if @beer.img != nil %>
-      <img src="<%=@beer.img%>" alt="<%=@beer.img%>"/>
+      <img id="olutkuva" src="<%=@beer.img%>" alt="<%=@beer.img%>"/>
     <% else %>
-      <img src="/images/bottle.jpg">
+      <img id="olutkuva" src="/images/bottle.jpg">
     <% end %>
   </div>
   <div class="span5">
