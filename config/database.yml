@@ -4,7 +4,7 @@ development:
   database: project_development
   pool: 5
   username: postgres
-  password:  postgres
+  password:  150150
 
 test: &TEST
   adapter: postgresql
@@ -12,7 +12,7 @@ test: &TEST
   database: project_test
   pool: 5
   username: postgres
-  password:  postgres
+  password:  150150
 
 production:
   adapter: postgresql
@@ -20,4 +20,4 @@ production:
   database: project_production
   pool: 5
   username: postgres
-  password:  postgres
+  password:  150150
